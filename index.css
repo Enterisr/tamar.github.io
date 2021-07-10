@@ -82,7 +82,7 @@ section {
   animation: font 10s linear infinite;
   border-top: solid black 2px;
   will-change: auto;
-
+  -webkit-transform: translateZ(0);
   border-bottom: solid black 2px;
   will-change: auto;
   font-family: "concerto";
@@ -172,26 +172,29 @@ footer img {
   main {
     width: 100vw;
     min-height: -webkit-fill-available;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
   }
   section {
-    font-size: calc(0.8rem * 3vh);
-    line-height: 3.5rem;
+    font-size: 0.4em;
   }
   .image_section img {
-    width: 30vw;
-    height: 30vw;
+    width: 34vw;
+    height: 34vw;
   }
   .first_section {
-    animation: font 3s ease infinite;
+    font-size: 2rem;
+    animation: font 4s ease infinite;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
   }
   .second_section {
-    animation: font 5s linear reverse infinite;
+    animation: font 4s linear reverse infinite;
     animation-timing-function: linear;
     -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
   }

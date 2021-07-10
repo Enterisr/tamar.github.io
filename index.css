@@ -166,19 +166,20 @@ footer img {
     border-color: var(--accent-color);
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   html,
   body,
   main {
-    height: 100%;
+    width: 100vw;
+    min-height: -webkit-fill-available;
   }
 
   h1 {
     font-size: 1.5rem;
   }
   section {
-    font-size: 0.9rem;
-    line-height: 4.3rem;
+    font-size: calc(0.8rem * 3vh);
+    line-height: 3.5rem;
   }
   .image_section img {
     width: 30vw;

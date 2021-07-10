@@ -167,16 +167,18 @@ footer img {
   }
 }
 @media only screen and (max-width: 600px) {
+  html,
+  body,
   main {
-    overflow-y: hidden;
-    overflow-x: hidden;
+    height: 100%;
   }
+
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   section {
-    font-size: 1rem;
-    line-height: 1.1em;
+    font-size: 0.9rem;
+    line-height: 4.3rem;
   }
   .image_section img {
     width: 30vw;
